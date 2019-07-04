@@ -15,7 +15,7 @@ composer require divineomega/laravel-geolocation-request
 
 ## Usage
 
-To use geolocation enabled request within your Laravel controller 
+To use geolocation enabled requests within your Laravel controller 
 methods, you can replace the `use Illuminate\Http\Request` line 
 at the top of your controllers, as shown in the usage example below.
 
