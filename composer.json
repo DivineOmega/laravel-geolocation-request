@@ -1,0 +1,22 @@
+{
+    "name": "divineomega/laravel-geolocation-request",
+    "description": "Laravel Geolocation Request",
+    "type": "library",
+    "require": {
+        "illuminate/http": "v5.6",
+        "divineomega/php-geolocation": "^2.0",
+        "divineomega/do-file-cache-psr-6": "^2.0"
+    },
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Jordan Hall",
+            "email": "jordan@hall05.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DivineOmega\\LaravelGeolocationRequest\\": "src/"
+        }
+    }
+}
