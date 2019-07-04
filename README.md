@@ -1,5 +1,9 @@
 # Laravel Geolocation Request
 
+The Laravel Geolocation Request package provides an easy
+way to geolocate requests to their country of origin, simply
+by calling a `$request->country()` method.
+
 ## Installation
 
 To install the Laravel Geolocation Request package, just
@@ -35,8 +39,13 @@ class UserController extends Controller
     {
         $user = new \App\User();
         $user->name = $request->name;
+        
+        // $request->country() will perform geolocation,
+        // and return a detailed country object.
+        
         $user->countryName = $request->country()->name;
         $user->countryCode = $request->country()->isoCodeAlpha3;
+        
         $user->save();
         
         // ...
