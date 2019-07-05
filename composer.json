@@ -3,7 +3,7 @@
     "description": "Laravel Geolocation Request",
     "type": "library",
     "require": {
-        "illuminate/http": "v5.6",
+        "illuminate/http": "^5.6",
         "divineomega/php-geolocation": "^2.0",
         "divineomega/do-file-cache-psr-6": "^2.0"
     },
