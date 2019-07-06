@@ -19,6 +19,10 @@ To use geolocation enabled requests within your Laravel controller
 methods, you can replace the `use Illuminate\Http\Request` line 
 at the top of your controllers, as shown in the usage example below.
 
+Once done, you can simple call the `$request->country()` method to 
+perform geolocation and return the origin country of the active 
+request based on its IP address.
+
 ```php
 <?php
 
