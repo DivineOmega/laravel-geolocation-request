@@ -37,12 +37,11 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $user = new \App\User();
-        $user->name = $request->name;
-        
-        // $request->country() will perform geolocation, and return a detailed country object.
+        // Perform geolocation, and return a country object.
         $country = $request->country();
         
+        $user = new \App\User();
+        $user->name = $request->name;
         $user->countryName = $country->name;
         $user->countryCode = $country->isoCodeAlpha3;
         
