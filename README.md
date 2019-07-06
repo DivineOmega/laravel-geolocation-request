@@ -21,7 +21,8 @@ at the top of your controllers, as shown in the usage example below.
 
 Once done, you can simple call the `$request->country()` method to 
 perform geolocation and return the origin country of the active 
-request based on its IP address.
+request based on its IP address. The country is returned as an object 
+containing many properties, such as the country name and ISO codes.
 
 ```php
 <?php
