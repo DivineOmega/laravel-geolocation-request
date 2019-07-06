@@ -40,8 +40,7 @@ class UserController extends Controller
         $user = new \App\User();
         $user->name = $request->name;
         
-        // $request->country() will perform geolocation,
-        // and return a detailed country object.
+        // $request->country() will perform geolocation, and return a detailed country object.
         
         $user->countryName = $request->country()->name;
         $user->countryCode = $request->country()->isoCodeAlpha3;
